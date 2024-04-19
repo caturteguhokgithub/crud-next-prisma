@@ -2,6 +2,9 @@ import { PrismaClient } from "@prisma/client";
 import AddProduct from "./addProduct";
 import DeleteProduct from "./deleteProduct";
 import UpdateProduct from "./updateProduct";
+
+export const dynamic = "force-dynamic";
+
 const prisma = new PrismaClient();
 
 const getProducts = async () => {
